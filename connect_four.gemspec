@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "connect_four.gemspec",
     "lib/connect_four.rb",
     "lib/play_connect_four.rb",
     "spec/connect_four_spec.rb",
