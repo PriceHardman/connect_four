@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "connect_four"
   gem.homepage = "http://github.com/PriceHardman/connect_four"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "Play connect four in the command line."
+  gem.description = "The connect_four.rb file contains classes for an object-oriented connect four game, designed to be played between two human players on the command line. Colored player symbols courtesy of the colorize gem. Play by executing play_connect_four.rb file in terminal."
   gem.email = "PriceHardman@gmail.com"
   gem.authors = ["Price Hardman"]
   # dependencies defined in Gemfile
@@ -29,11 +29,6 @@ require 'rspec/core'
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = FileList['spec/**/*_spec.rb']
-end
-
-RSpec::Core::RakeTask.new(:rcov) do |spec|
-  spec.pattern = 'spec/**/*_spec.rb'
-  spec.rcov = true
 end
 
 task :default => :spec
