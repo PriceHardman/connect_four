@@ -1,6 +1,14 @@
 = connect_four
 
-Description goes here.
+Play connect four in the command line!
+
+This gem allows for two players to play Connect Four in the terminal.
+
+Play by requiring 'connect_four', creating an instance of the Game class, and then calling the play method on that Game object.
+
+Under the hood:
+
+The board is a 6x7 array of Cell objects, which hold their state (open or occupied) and their searchpaths. Searchpaths are the game's way of determining a winner. Each cell has a collection of valid searchpaths, routes the game will travel outward radially up to 3 spaces from the starting cell to look for adjacent moves by the given player. For example, the bottom right cell has N, NE, and E as its searchpaths, since going any direction other than those would take us off the board. After every player's turn, the game will travel all the searchpaths of every cell on which that player has made a move. If all three cells on the path (plus the starting cell) are in that player's move history, then that player is declared the winner and the game is over.
 
 == Contributing to connect_four
  

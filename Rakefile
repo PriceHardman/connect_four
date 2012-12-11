@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/PriceHardman/connect_four"
   gem.license = "MIT"
   gem.summary = "Play connect four in the command line."
-  gem.description = "The connect_four.rb file contains classes for an object-oriented connect four game, designed to be played between two human players on the command line. Colored player symbols courtesy of the colorize gem. Play by executing play_connect_four.rb file in terminal."
+  gem.description = "The connect_four.rb file contains classes for an object-oriented connect four game, designed to be played between two human players on the command line. Colored player symbols courtesy of the colorize gem. Play by creating an instance of Game and calling the play method on it."
   gem.email = "PriceHardman@gmail.com"
   gem.authors = ["Price Hardman"]
   # dependencies defined in Gemfile
